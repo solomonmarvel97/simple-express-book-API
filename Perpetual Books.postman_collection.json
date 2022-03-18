@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "6c5bec81-410a-456d-a45e-ddf196e7107e",
+		"name": "Perpetual Books",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/tasks",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ISBN\": 1234,\n    \"Name\": \"marv's diary\",\n    \"Author\": \"marv\",\n    \"Genre\": \"business\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/tasks",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSingleBook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/tasks/62344e59a8d785047e696c49",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks",
+						"62344e59a8d785047e696c49"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBook",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ISBN\": 1234,\n    \"Name\": \"marvelous' diary\",\n    \"Author\": \"marvelous\",\n    \"Genre\": \"business\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/tasks/62344e59a8d785047e696c49",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks",
+						"62344e59a8d785047e696c49"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBook Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ISBN\": 1234,\n    \"Name\": \"marvelous' diary\",\n    \"Author\": \"marvelous\",\n    \"Genre\": \"business\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/tasks/62344e59a8d785047e696c45",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks",
+						"62344e59a8d785047e696c45"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
